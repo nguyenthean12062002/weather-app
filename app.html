@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Weather-app</title>
+</head>
+<body>
+
+    <div class="container" >
+        <input class="before_input" type="text" placeholder="nhập địa chỉ...!">
+        <header class="header">
+            <i class="fa-solid fa-location-dot header__icon"></i>
+            <span class="header__name"> </span>
+        </header>
+        <div class="main">
+            <img class="main__img" src="https://cdn.pixabay.com/photo/2012/04/18/13/55/clouds-37095_960_720.png" alt="">
+            <span class="main__des"></span>
+            <!-- hiển thị nhiệt độ -->
+            <h2 class="main__temperature">
+                <i class="fa-solid fa-temperature-low temperature-icon"></i>
+            </h2>
+            <div class="main__sub">
+                <span class="main__sub__speed-wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span class="speed-wind--show"></span>
+                </span>
+                <span class="main__sub__speed-rain">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                    <span class="speed-rain--show"></span>
+                </span>
+            </div>
+            <div class="main__day">
+                Today
+                <span class="main__day-show"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
