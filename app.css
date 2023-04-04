@@ -15,6 +15,9 @@ video {
   display: block;
   max-width: 100%;
 }
+html{
+    transition: all ease-in-out 0.2s;
+}
 body {
   min-height: 100vh;
   display: flex;
@@ -69,7 +72,8 @@ body {
     align-items: center;
 }
 .main__img{
-    width: 250px;  
+    width: 150px;
+    image-rendering: pixelated;  
 }
 .main__des{
     font-size: 1.3rem;
